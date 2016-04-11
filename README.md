@@ -1,2 +1,2 @@
 # ShapeLocker
-PATTERN LOCK, unlock using gestures
+PATTERN LOCK, unlock with gestures
