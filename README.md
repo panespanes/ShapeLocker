@@ -1,8 +1,11 @@
 # ShapeLocker
-PATTERN LOCK, unlock with gestures
-
-(手势解锁,九宫格解锁,图形解锁)
-
+PATTERN LOCK, unlock with gestures<br>
+(手势解锁,九宫格解锁,图形解锁)<br><br>
+![image](https://github.com/panespanes/ShapeLocker/blob/master/mdp1.png)
+<br>
+<br>
+<br>
+<br>
 UNSOLVED:<br>
 尚未解决的问题:
  (不影响真机运行的应用, 有在模拟器上运行的需求见下文解决办法)<br>
@@ -28,7 +31,7 @@ UNSOLVED:<br>
 
 ```
  而VirtualBox并不会按照严格按照rect大小重绘区域.<br>
- 解决办法(真机运行的项目中请不要这样修改, 因为会造成平均34%左右性能损失):
+ 解决办法(真机运行的项目中请不要这样修改, 因为会造成平均34%左右性能损失):<br>
  将这部分代码改为
  ```java
 invalidate();
