@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ShapeLocker">
+        <attr name="aspect" format="string" />
+        <attr name="color_line" format="color" />
+    </declare-styleable>
+</resources>
