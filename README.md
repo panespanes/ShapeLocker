@@ -5,9 +5,63 @@ PATTERN LOCK, unlock with gestures<br>
 <br>
 <br>
 <br>
+
+Download
+--------
+You can download a jar from GitHub's [releases page][1].
+
+Or use Gradle:
+
+```gradle
+repositories {
+  mavenCentral() // jcenter() also works
+}
+
+dependencies {
+  compile 'com.panes.shapelocker:1.0.2'
+}
+```
 <br>
-UNSOLVED:<br>
-尚未解决的问题:
+How to Use
+-------------------
+
+Simple use case: 
+
+in layout.xml: 
+```java
+// To create a simple view:
+    <com.panes.shapelocker.view.ShapeLocker
+        android:id="@+id/sl"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        >
+
+    </com.panes.shapelocker.view.ShapeLocker>
+ ```
+More settings:
+ ```java
+
+@Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.sp);
+        
+        // load a default theme:
+        ShapeLockerProperties.with(this).loadLightTheme();
+        // or:
+        ShapeLocker sl = (ShapeLocker) findViewById(R.id.sl);
+        sl.loadLightTheme();
+        
+        
+    }
+```
+
+<br>
+UNSOLVED:
+-------------------
+
  (不影响真机运行的应用, 有在模拟器上运行的需求见下文解决办法)<br>
  有同学反映<strong><em>模拟器上运行</strong></em>会出现"密码圈绘制不全"的bug, 如图<br>
  
