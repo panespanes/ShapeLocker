@@ -21,7 +21,6 @@ import android.view.View;
 import android.view.accessibility.AccessibilityEvent;
 
 import com.panes.shapelocker.R;
-import com.panes.shapelocker.property.ShapeLockerProperties;
 import com.panes.shapelocker.utils.SPUtil;
 
 import java.util.ArrayList;
@@ -318,13 +317,16 @@ public class ShapeLocker extends View {
 //
 //        mBitmapArrowGreenUp = getBitmapFor(R.drawable.indicator_code_lock_drag_direction_green_up_holo);
 //        mBitmapArrowRedUp = getBitmapFor(R.drawable.indicator_code_lock_drag_direction_red_up_holo);
-        mBitmapBtnDefault = ShapeLockerProperties.with(getContext()).getmBitmapBtnDefault();
-        mBitmapBtnTouched = ShapeLockerProperties.with(getContext()).getmBitmapBtnTouched();
-        mBitmapCircleDefault = ShapeLockerProperties.with(getContext()).getmBitmapCircleDefault();
-        mBitmapCircleGreen = ShapeLockerProperties.with(getContext()).getmBitmapCircleGreen();
-        mBitmapCircleRed = ShapeLockerProperties.with(getContext()).getmBitmapCircleRed();
-        mBitmapArrowGreenUp = ShapeLockerProperties.with(getContext()).getmBitmapArrowGreenUp();
-        mBitmapArrowRedUp = ShapeLockerProperties.with(getContext()).getmBitmapArrowRedUp();
+
+
+
+//        mBitmapBtnDefault = ShapeLockerProperties.with(getContext()).getmBitmapBtnDefault();
+//        mBitmapBtnTouched = ShapeLockerProperties.with(getContext()).getmBitmapBtnTouched();
+//        mBitmapCircleDefault = ShapeLockerProperties.with(getContext()).getmBitmapCircleDefault();
+//        mBitmapCircleGreen = ShapeLockerProperties.with(getContext()).getmBitmapCircleGreen();
+//        mBitmapCircleRed = ShapeLockerProperties.with(getContext()).getmBitmapCircleRed();
+//        mBitmapArrowGreenUp = ShapeLockerProperties.with(getContext()).getmBitmapArrowGreenUp();
+//        mBitmapArrowRedUp = ShapeLockerProperties.with(getContext()).getmBitmapArrowRedUp();
 
         if (mBitmapBtnDefault == null || mBitmapBtnTouched == null || mBitmapCircleDefault == null ||
                 mBitmapCircleGreen == null || mBitmapCircleRed == null || mBitmapArrowGreenUp == null || mBitmapArrowRedUp == null) {
@@ -1245,5 +1247,16 @@ public class ShapeLocker extends View {
                         return new SavedState[size];
                     }
                 };
+    }
+
+
+    public void loadLightTheme() {
+        mBitmapBtnDefault = getBitmapFor(R.drawable.btn_code_lock_default_holo);
+        mBitmapBtnTouched = getBitmapFor(R.drawable.btn_code_lock_touched_holo);
+        mBitmapCircleDefault = getBitmapFor(R.drawable.indicator_code_lock_point_area_default_holo);
+        mBitmapCircleGreen = getBitmapFor(R.drawable.indicator_code_lock_point_area_green_holo);
+        mBitmapCircleRed = getBitmapFor(R.drawable.indicator_code_lock_point_area_red_holo);
+        mBitmapArrowGreenUp = getBitmapFor(R.drawable.indicator_code_lock_drag_direction_green_up_holo);
+        mBitmapArrowRedUp = getBitmapFor(R.drawable.indicator_code_lock_drag_direction_red_up_holo);
     }
 }

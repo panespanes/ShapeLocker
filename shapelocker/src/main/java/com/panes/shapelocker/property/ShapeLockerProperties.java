@@ -16,28 +16,27 @@ public class ShapeLockerProperties {
     private static Context mContext;
 
 
-
     private Bitmap mBitmapBtnDefault;
     private Bitmap mBitmapBtnTouched;
     private Bitmap mBitmapCircleDefault;
-    private Bitmap mBitmapCircleGreen ;
-    private Bitmap mBitmapCircleRed ;
-    private Bitmap mBitmapArrowGreenUp ;
+    private Bitmap mBitmapCircleGreen;
+    private Bitmap mBitmapCircleRed;
+    private Bitmap mBitmapArrowGreenUp;
     private Bitmap mBitmapArrowRedUp;
 
-    public static ShapeLockerProperties with(Context context){
+    public static ShapeLockerProperties with(Context context) {
         // always modify the CONTEXT field.
-        if (context == null){
+        if (context == null) {
             throw new ShapeLockerException("context should not be null.");
         }
         mContext = context;
-        if (instance == null){
+        if (instance == null) {
             instance = new ShapeLockerProperties();
         }
         return instance;
     }
 
-    public ShapeLockerProperties loadLightTheme(){
+    public ShapeLockerProperties loadLightTheme() {
         mBitmapBtnDefault = parseBitmap(R.drawable.btn_code_lock_default_holo);
         ShapeLocker.mBitmapBtnDefault = mBitmapBtnDefault;
         mBitmapBtnTouched = parseBitmap(R.drawable.btn_code_lock_touched_holo);
@@ -55,6 +54,8 @@ public class ShapeLockerProperties {
         return instance;
     }
 
+    // have no nice pics yet.
+    /*
     public ShapeLockerProperties loadDarkTheme(){
         mBitmapBtnDefault = parseBitmap(R.drawable.btn_code_lock_default_holo);
         ShapeLocker.mBitmapBtnDefault = mBitmapBtnDefault;
@@ -71,15 +72,16 @@ public class ShapeLockerProperties {
         ShapeLocker.mBitmapArrowGreenUp = mBitmapArrowGreenUp;
         ShapeLocker.mBitmapArrowRedUp = mBitmapArrowRedUp;
         return instance;
-    }
+    }*/
 
 
     /**
      * parse form resId to bitmap
+     *
      * @param resId
      * @return
      */
-    private final Bitmap parseBitmap(int resId){
+    private final Bitmap parseBitmap(int resId) {
         return BitmapFactory.decodeResource(mContext.getResources(), resId);
     }
 

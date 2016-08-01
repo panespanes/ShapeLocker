@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.panes.shapelocker.property.ShapeLockerProperties;
+import com.panes.shapelocker.view.ShapeLocker;
 
 public class ScrollingActivity extends AppCompatActivity {
 
@@ -25,9 +25,9 @@ public class ScrollingActivity extends AppCompatActivity {
 //                        .setAction("Action", null).show();
 //            }
 //        });
-        ShapeLockerProperties.with(this).loadLightTheme();
-//        ShapeLocker sl = (ShapeLocker) findViewById(R.id.sl);
-
+//        ShapeLockerProperties.with(this).loadLightTheme();
+        ShapeLocker sl = (ShapeLocker) findViewById(R.id.sl);
+        sl.loadLightTheme();
     }
 
     @Override
