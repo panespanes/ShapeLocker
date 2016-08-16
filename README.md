@@ -40,7 +40,7 @@ in layout.xml:
 
     </com.panes.shapelocker.view.ShapeLocker>
  ```
-More settings:
+More configurations:
  ```java
 
 @Override
@@ -62,7 +62,7 @@ More settings:
 UNSOLVED:
 -------------------
 
- (不影响真机运行的应用, 有在模拟器上运行的需求见下文解决办法)<br>
+ 模拟器上运行的bug (真机上运行没影响)<br>
  有同学反映<strong><em>模拟器上运行</strong></em>会出现"密码圈绘制不全"的bug, 如图<br>
  
  ![image](https://github.com/panespanes/ShapeLocker/blob/master/mdp.png)
