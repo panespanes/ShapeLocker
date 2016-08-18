@@ -8,19 +8,25 @@ PATTERN LOCK, unlock with gestures<br>
 
 Download
 --------
-You can download a jar from GitHub's [releases page][1].
+You can download binaries from GitHub's [release page](https://github.com/panespanes/ShapeLocker/releases)
 
-Or use Gradle:
-
+Or use Gradle:  
+Step 1. Add it in your root build.gradle at the end of repositories:
 ```gradle
-repositories {
-  mavenCentral() // jcenter() also works
-}
-
-dependencies {
-  compile 'com.panes.shapelocker:1.0.2'
-}
+	allprojects {
+		repositories {
+			...
+			maven { url "https://jitpack.io" }
+		}
+	}
 ```
+Step 2. Add the dependency
+```gradle
+	dependencies {
+	        compile 'com.github.panespanes:ShapeLocker:v1.0.3'
+	}
+```
+
 <br>
 How to Use
 -------------------
