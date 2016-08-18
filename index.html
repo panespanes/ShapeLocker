@@ -32,17 +32,23 @@
 <h2>
 <a id="download" class="anchor" href="#download" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Download</h2>
 
-<p>You can download a jar from GitHub's [releases page][1].</p>
+<p>You can download binaries from GitHub's <a href="https://github.com/panespanes/ShapeLocker/releases">release page</a></p>
 
-<p>Or use Gradle:</p>
+<p>Or use Gradle:<br>
+Step 1. Add it in your root build.gradle at the end of repositories:</p>
 
-<div class="highlight highlight-source-groovy-gradle"><pre><span class="pl-en">repositories</span> {
-  mavenCentral() <span class="pl-c">// jcenter() also works</span>
-}
+<div class="highlight highlight-source-groovy-gradle"><pre>    <span class="pl-en">allprojects</span> {
+        repositories {
+            <span class="pl-k">..</span>.
+            maven { url <span class="pl-s"><span class="pl-pds">"</span>https://jitpack.io<span class="pl-pds">"</span></span> }
+        }
+    }</pre></div>
 
-<span class="pl-en">dependencies</span> {
-  compile <span class="pl-s"><span class="pl-pds">'</span>com.panes.shapelocker:1.0.2<span class="pl-pds">'</span></span>
-}</pre></div>
+<p>Step 2. Add the dependency</p>
+
+<div class="highlight highlight-source-groovy-gradle"><pre>    <span class="pl-en">dependencies</span> {
+            compile <span class="pl-s"><span class="pl-pds">'</span>com.github.panespanes:ShapeLocker:v1.0.3<span class="pl-pds">'</span></span>
+    }</pre></div>
 
 <p><br></p>
 
