@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.panes.myapplication"
-        minSdkVersion 17
+        minSdkVersion 14
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
@@ -24,6 +24,6 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.3.0'
     compile 'com.android.support:design:23.3.0'
-    compile 'com.github.panespanes:ShapeLocker:v1.0.3'
+    compile 'com.github.panespanes:ShapeLocker:v1.0.4'
 
 }
