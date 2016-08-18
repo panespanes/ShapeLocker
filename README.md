@@ -1,7 +1,7 @@
 # ShapeLocker
 PATTERN LOCK, unlock with gestures<br>
 (手势解锁,九宫格解锁,图形解锁)<br><br>
-![image](https://github.com/panespanes/ShapeLocker/blob/master/mdp1.png)
+![image](https://github.com/panespanes/ShapeLocker/blob/master/shapelocker2.png)
 <br>
 <br>
 <br>
